@@ -1,0 +1,361 @@
+.menu__container {
+    background-color: white;
+    min-height: 80px;
+    border-radius: 0;
+}
+
+.menu {
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .menu__logo-container {
+        flex: 0 1 250px;
+        font-size: 28px;
+    }
+
+    .menu__items {
+        flex: 1 0 685px;
+    }
+
+    .menu__title {
+        padding: 0 10px;
+        margin: 0;
+        font-size: 28px;
+        display: inline-block;
+    }
+
+    .menu__logo {
+        margin-top: 5px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .menu__items li {
+        float: right;
+    }
+
+    .menu__item {
+        font-size: 15px;
+        margin: 0 2px;
+        border-radius: 4px;
+        color: rgba(0,0,0,.87) !important;
+    }
+
+    .menu__item:hover a {
+        background-color: rgba(0,0,0,.87) !important;
+        color: #ffffff !important;
+        border-radius: 3px;
+        transition: 0.5s;
+    }
+
+
+.main-slide {
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #F4F4F4;
+}
+
+    .main-slide__title {
+        font-size: 45px;
+        line-height: 58px;
+    }
+
+    .main-slide__subtitle {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    .main-slide__text {
+        font-size: 17px;
+        margin: 20px 0;
+    }
+
+    .main-slide__image {
+        margin: 0 auto;
+        padding: 15px 0 10px 0;
+        display: block;
+        height: -webkit-calc(100vh - 360px);
+        height:    -moz-calc(100vh - 360px);
+        height:         calc(100vh - 360px);
+    }
+
+    .main-slide__success-icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        display: block;
+        background: center center no-repeat url("../images/success.svg");
+        background-size: contain;
+    }
+
+
+.customer-info {
+    background-color: #F4F4F4;
+    padding: 40px;
+}
+
+    .customer-info__card {
+        background-color: white;
+        box-shadow: none;
+        border-radius: 0;
+        margin: 20px 5px;
+        padding: 20px;
+    }
+
+    .customer-info__stars {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customer-info__star {
+        flex: 0 0 30px;
+        width: 30px;
+        margin: 10px;
+    }
+
+
+.functions-info {
+    background-color: #F4F4F4;
+    padding: 40px;
+}
+
+    .functions-info__icon {
+        padding-top: 25px;
+        width: 45px;
+        float: left;
+    }
+
+    .functions-info__title, .functions-info__text {
+        margin: 0;
+        padding: 4px 0;
+        line-height: 24px;
+    }
+
+    .functions-info__title {
+        padding-top: 80px;
+        font-size: 20px;
+    }
+
+    .functions-info_image {
+        height: 100%;
+        background: center no-repeat url("../images/meike-mk910-double.jpg");
+        background-size: contain;
+    }
+
+
+.details-info {
+    background-color: white;
+    padding: 40px;
+}
+
+    .details-info__image {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+
+
+.benefits-info {
+    background-color: #F4F4F4;
+    padding: 20px;
+}
+
+    .benefits-info__title {
+        margin: 30px 20px;
+    }
+
+    .benefits-info__image {
+        background: center no-repeat url("../images/meike-mk910-package.png");
+        background-size: contain;
+    }
+
+    .benefits-info__text {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 0;
+        font-size: 17px;
+        color: rgba(0,0,0,.87);
+    }
+
+
+.radio__container {
+    border-top: 2px solid white;
+}
+
+
+.form-info {
+
+}
+
+    .form-info__panel {
+        min-height: 820px;
+    }
+
+    .form-info__tabs {
+        color: #7A7A7A;
+    }
+
+
+    .order-form__terms-container {
+        margin-top: 15px;
+    }
+
+    .order-form__terms {
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+
+.company-info {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+    .company-info__title {
+        margin: 15px 10px 10px 10px;
+        text-transform: uppercase;
+    }
+
+    .company-info__icon {
+        padding-right: 10px;
+    }
+
+    .company-info__list {
+        list-style-type: none;
+    }
+
+    .company-info__list-item {
+        line-height: 24px;
+    }
+
+
+
+/* SETTINGS */
+h1, h2, h3, h4, h5, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    color: #333333;
+}
+
+h4, h5, p {
+    color: #7A7A7A;
+}
+
+h4 {
+    margin: 20px 10px;
+}
+
+p {
+    line-height: 30px;
+    font-size: 17px;
+}
+
+mark {
+    background-color: #ffc107;
+    border-radius: 2px;
+    padding: 0 4px;
+}
+
+.site-maxWidth {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.control-label, .radio label, .terms label {
+    display: block;
+    text-align: left !important;
+    font-size: 17px;
+}
+
+
+/* forms */
+form {
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #7A7A7A;
+    background-color: #e8e8e8;
+}
+
+
+/* desktop only */
+@media (min-width: 768px) {
+
+    .row-eq-height{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .customer-info__text-box {
+        padding: 30px 0;
+    }
+
+    .customer-info__card {
+        height: calc(100% - 40px);
+    }
+
+    .functions-info--text-right {
+        text-align: right;
+    }
+
+    .functions-info--float-right {
+        float: right;
+    }
+
+    .active > a {
+        border-radius: 3px;
+    }
+
+    form {
+        padding: 50px;
+        margin: 30px;
+    }
+
+    .benefits-info {
+        padding: 40px;
+    }
+}
+
+
+/* parallax effect */
+.parallax {
+    height: 60vh;
+    background-size: contain;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+    .parallax__one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white fixed center no-repeat url("../images/meike-mk910-background1.jpg");
+    }
+
+    .parallax__two {
+        background: white fixed center no-repeat url("../images/meike-mk910-background2.jpg");
+    }
+
+    .parallax__three {
+        background: white fixed center no-repeat url("../images/meike-mk910-background3.jpg");
+    }
+
+    .parallax__four {
+        background: white fixed center no-repeat url("../images/meike-mk910-background4.jpg");
+    }

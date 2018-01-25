@@ -1,0 +1,23 @@
+<h2>csucsvaku.hu megrendelés visszaigazolás</h2>
+<br>
+<h3>Kedves {{ orderData.name }}!</h3>
+<br>
+<p>Az alábbi terméket rendelted a csucsvaku.hu oldalról: <b>Meike MK-910</b> professzionális rendszervaku Nikon fényképezőgéphez</p>
+<br>
+<p>Megrendelt mennyiség: {{ orderData.quantity }} darab</p>
+<p>Kiszállítási cím: {{ orderData.deliveryAdress }}</p>
+<p>Kiszállítási mód: {{ orderData.deliveryMode }}</p>
+<br>
+<p>Számlázási cím: {{ orderData.invoice }}</p>
+<p>Garancia: {{ orderData.warranty }}</p>
+<br>
+<p>Megjegyzés: {{ orderData.message }}</p>
+<br>
+<p>A kiszállítással kapcsolatban alábbi elérhetőségeiden hamarosan egyeztetünk:</p>
+<p> - email: {{ orderData.email }}</p>
+<p> - telefon: {{ orderData.phone }}</p>
+<br>
+<p>Köszönjük a megrendelést!</p>
+<br>
+<p>Üdvözlettel,</p>
+<p>csucsvaku.hu csapata</p>
