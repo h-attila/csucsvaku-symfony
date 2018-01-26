@@ -130,6 +130,7 @@
 .functions-info {
     background-color: #F4F4F4;
     padding: 40px;
+    min-height: 100vh;
 }
 
     .functions-info__icon {
@@ -202,10 +203,12 @@
 
     .form-info__panel {
         min-height: 820px;
+        margin-top: 15px !important;
     }
 
     .form-info__tabs {
         color: #7A7A7A;
+        font-weight: bold;
     }
 
 

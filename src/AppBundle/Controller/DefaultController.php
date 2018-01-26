@@ -10,8 +10,11 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
+
     /**
      * @Route("/", name="homepage")
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction(Request $request)
     {
@@ -20,7 +23,6 @@ class DefaultController extends Controller
 
         // replace this example code with whatever you need
         return $this->render('base.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
             'orderForm' => $orderForm->createView(),
             'messageForm' => $messageForm->createView()
         ]);
