@@ -14,9 +14,10 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="homepage")
      * @param Request $request
+     * @param \Swift_Mailer $mailer
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function indexAction(Request $request)
+    public function indexAction(Request $request, \Swift_Mailer $mailer)
     {
         $orderForm = $this->createForm(OrderFormType::class);
         $messageForm = $this->createForm(MessageFormType::class);

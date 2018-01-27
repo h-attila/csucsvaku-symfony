@@ -217,14 +217,16 @@
     }
 
     .order-form__terms {
-        font-size: 12px;
+        font-size: 14px;
         text-decoration: none;
     }
 
 
 .company-info {
-    margin: 0 auto;
-    max-width: 600px;
+    padding: 10px;
+    border-top: 1px solid #e7e7e7;
+    background-color: white;
+
 }
 
     .company-info__title {
@@ -233,7 +235,7 @@
     }
 
     .company-info__icon {
-        padding-right: 10px;
+        padding-right: 5px;
     }
 
     .company-info__list {
@@ -241,7 +243,12 @@
     }
 
     .company-info__list-item {
-        line-height: 24px;
+        line-height: 22px;
+        padding: 0 10px;
+        color: #7A7A7A;
+        font-size: 12px;
+        font-weight: normal;
+        display: inline-block;
     }
 
 
@@ -331,7 +338,7 @@ form {
     }
 
     .benefits-info {
-        padding: 40px;
+        padding: 40px 40px 0 40px;
     }
 }
 
