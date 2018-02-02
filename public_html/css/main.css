@@ -59,6 +59,8 @@
     min-height: 100vh;
     text-align: center;
     padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #F4F4F4;
 }
 
@@ -221,6 +223,13 @@
         text-decoration: none;
     }
 
+    .order-form__warranty-container {
+        margin-top: 15px;
+        background-color: white;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
 
 .company-info {
     padding: 10px;
@@ -302,10 +311,37 @@ form {
 }
 
 
-/* desktop only */
+/* mobile only (max: 768px) */
+@media (max-width: 768px) {
+
+    .company-info, .customer-info, .functions-info, .details-info, .benefits-info {
+        padding: 20px 5px;
+    }
+
+    form {
+        padding: 30px;
+        margin: 20px 0;
+    }
+
+}
+
+
+/*  tablets-desktop only (min: 992px) */
+@media (min-width: 992px) {
+
+    .customer-info__row-eq-height {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+
+/* tablets-desktop only */
 @media (min-width: 768px) {
 
-    .row-eq-height{
+    .functions-info__row-eq-height, .benefits-info__row-eq-height {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
