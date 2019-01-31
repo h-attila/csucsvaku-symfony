@@ -50,11 +50,13 @@
 
 <div class="main-slide">
 
-    {% for message in app.flashes('message') %}
-        <p class="alert alert-success">
-            <span class="main-slide__success-icon"></span>
-            {{ message }}
-        </p>
+    {% for label, message in app.session.flashbag.all %}
+        {% for text in message %}
+            <p class="alert alert-success">
+                <span class="main-slide__{{ label }}-icon"></span>
+                {{ text }}
+            </p>
+        {% endfor %}
     {% endfor %}
 
     <h1 class="main-slide__title text-center">Csúcsvaku</h1>
